@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pedra, Papel e Tesoura</h1>
+    <div class="container">
+        <div class="itemJogo">
+            <span class="mao" id="maoEsquerda"><img src="imagens/punho-fechado.png" alt=""></span>
+            <span class="mao" id="maoDireita"><img src="imagens/punho-fechado.png" alt=""></span>
+        </div>
+        <p>Escolha sua jogada:</p>
+
+        <div class="jogada" onclick="jogar()">
+            <span id="pedra" class="opcaoJogada">
+                <img src="imagens/rochas.png" alt="">
+            </span>
+
+            <span id="papel" class="opcaoJogada">
+                <img src="imagens/papel.png">
+            </span>
+
+            <span id="tesoura" class="opcaoJogada">
+                <img src="imagens/ferramenta-tesoura.png" alt="">
+            </span>
+        </div>
+        <p id="result">Resultado</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
