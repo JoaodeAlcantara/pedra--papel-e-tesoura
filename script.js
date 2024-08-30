@@ -4,6 +4,12 @@ let papel = document.getElementById('papel')
 let tesoura = document.getElementById('tesoura')
 let escolhaJogador
 let resultado = document.getElementById('result')
+let pontosJogador = 0
+let spanJogador = document.getElementById('pJogador')
+let pontosComputador = 0
+let spanComputador = document.getElementById('pComputador')
+
+
 pedra.onclick = function(){
     maoEsquerda.innerHTML = '<img src="imagens/punho-fechado.png" alt=""></img>'
     escolhaJogador = 1
@@ -34,9 +40,10 @@ if (escolhacomputador==2){
 if(escolhacomputador==3){
     maoDireita.innerHTML = '<img src="imagens/vitoria.png" alt=""></img>'
 }
+
 if(escolhacomputador == escolhaJogador){
     resultado.innerHTML = 'empate'
-    resultado.style.color ='black'
+    resultado.style.color ='rgb(64, 64, 64)'
 } else 
 if((escolhaJogador === 1 && escolhacomputador === 3) ||
     (escolhaJogador === 2 && escolhacomputador === 1) ||
@@ -47,9 +54,10 @@ if((escolhaJogador === 1 && escolhacomputador === 3) ||
 } else{
     resultado.innerHTML = 'Derrota'
     resultado.style.color ='red'
+    pontosComputador++ 
 }
-
-
+    spanComputador.innerHTML = pontosComputador
+    spanJogador.textContent = pontosJogador
 }
 
 

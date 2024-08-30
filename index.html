@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pedra, Papel e Tesoura</h1>
     <div class="container">
         <div class="itemJogo">
             <span class="mao" id="maoEsquerda"><img src="imagens/punho-fechado.png" alt=""></span>
@@ -28,8 +27,14 @@
                 <img src="imagens/ferramenta-tesoura.png" alt="">
             </span>
         </div>
-        <p id="result">Resultado</p>
+        
+        <div id="placar">
+            <p>Vc: <span id="pJogador">00</span></p>
+            <p id="result">Resultado</p>
+            <p>Pc: <span id="pComputador">00</span></p>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
