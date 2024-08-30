@@ -9,7 +9,6 @@ let spanJogador = document.getElementById('pJogador')
 let pontosComputador = 0
 let spanComputador = document.getElementById('pComputador')
 
-
 pedra.onclick = function(){
     maoEsquerda.innerHTML = '<img src="imagens/punho-fechado.png" alt=""></img>'
     escolhaJogador = 1
@@ -56,7 +55,7 @@ if((escolhaJogador === 1 && escolhacomputador === 3) ||
     resultado.style.color ='red'
     pontosComputador++ 
 }
-    spanComputador.innerHTML = pontosComputador
+    spanComputador.textContent = pontosComputador
     spanJogador.textContent = pontosJogador
 }
 
